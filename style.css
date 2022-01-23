@@ -1,0 +1,285 @@
+*
+{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+h3{
+    text-transform: uppercase;
+    color:red;
+}
+button{
+    background: red;
+    padding: 5px 20px;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    box-shadow: -5px 5px 5px rgba(107, 68, 141, 0.431);
+
+    float:right;
+}
+.wrapper
+{
+    min-height: 100vh;
+}
+/* this is for contaier nagen     */
+.container
+{
+   background: rgba(155, 214, 216, 0.657);
+    width:80%;
+    margin:auto;
+}
+
+.card
+{
+    background: rgba(55, 57, 61, 0.198);
+    /* min-width:250px; */
+    margin:10px;
+    min-height: 40vh;
+    padding-bottom: 10px;
+    box-shadow:-5px -5px 5px rgba(153, 53, 240, 0.548) ;
+}
+.global-msg
+{
+    background: blue;
+    color:white;
+    padding: 10px 2px;
+    
+
+}
+.global-msg .container
+{
+    display:flex;
+    justify-content:space-between;
+}
+.icons i
+{
+    font-size: 40px;
+    margin-left:20px;;
+}
+/* header section */
+.header
+{
+    background: pink;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+/* display flex makes the content to the right and just content makes in right */
+.menu
+{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+
+}
+.menu ul li{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.menu ul li:hover{
+    color: coral;
+}
+.logo
+{
+    font-family: 'Dancing Script', cursive;
+}
+/* her section for image */
+.hero
+{
+    min-height: 70vh;
+    background: url(./Assets/hero.jpg)
+    no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.hero-content{
+    background: black;
+    opacity: 0.6;
+    color: white;
+    padding: 10px 10px;
+    text-align:center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px red;
+}
+.latest-section
+{
+    margin-top:60px;
+}
+.latest-content
+{
+    display: flex;
+    flex-direction: row;
+}
+.latest
+{
+    display: 60%;
+
+}
+.latest article
+{
+    margin-top: 70px;;
+}
+.post-content
+{
+    display: flex;
+    flex-direction: row;
+
+}
+.post-content img
+{
+    width:100px;
+    border: 1px solid red;
+    border-radius: 5px;
+    box-shadow: -10px 5px 0px 0px rgb(200, 192, 207);
+
+}     
+p
+{
+    /* text-align:left; */
+}
+.info
+{
+    margin: 0 20px;
+}
+.menu i{
+    display: none;
+}
+ date{
+    background:chocolate;
+    padding:5px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+/* aside *************/
+.links
+{
+    background: salmon;
+    width: 40%;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+.by-country
+{
+    margin-top:60px;
+}
+/* re section*/
+rec
+{
+    margin-top:64px;
+}
+.rec-content
+{
+    display: flex;
+    flex-direction: row;
+}
+.rec-content img
+{
+    width:100%;
+}
+/* ****** footer**********/
+/* subsciber form */
+.subscribe
+{
+    background: rgba(77, 87, 90, 0.377);
+    margin:50px auto;
+    min-height: 40vh;
+    text-align: center;
+    padding-top:32px;
+
+}
+.subscribe input
+{
+    padding:10px;
+    border:none;
+    line-height: 20px;
+}
+[type="submit"]
+{
+    background: chartreuse;
+}
+.footer
+{
+    background: rgba(0, 0, 0, 0.555);
+    padding:64px 0;
+    color:white;
+    text-align: center;
+}
+/* MEDIA QUEURY */
+@media (max-width: 768px){
+    .menu{
+        height: 62px;
+    }
+    /* it allows to display icon as ham instead of home, contact... */
+    .menu i{
+        display: block;
+    }
+    /* it hides the  menu bar as home, contact */
+    .menu ul{
+        display: none;
+       
+    }
+    .latest-content
+    {
+        display:flex;
+        flex-direction: column;
+    }
+    .latest{
+        width:100%;
+    }
+    .links{
+        width:100%;
+        margin-top:48px;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .by-country{
+        margin-top: 0;
+    }
+
+    .rec-content
+{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+@media(max-width: 576px){
+    .post-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .post-content img{
+        width:100%;
+        margin-bottom:32px;
+    }
+    .latest article{
+        margin-top: 123px;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+    .subscribe form{
+        display: flex;
+        flex-direction: column;
+        padding:16px;
+    }
+    .subscribe form input{
+        margin-bottom: 16px;
+    }
+
+
+}
